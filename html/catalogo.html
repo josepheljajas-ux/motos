@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motos con Jhonny — Catálogo</title>
+  <link rel="icon" type="image/jpeg" href="../assets/image/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="../index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
+        <img src="../assets/image/logo.jpg" alt="Motos con Jhonny Logo"
+          style="height: 38px; width: 38px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--accent);">
+        <span>MOTOS CON JHONNY</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html">Inicio</a>
+        <a href="catalogo.html" class="nav__active">Catálogo</a>
+        <a href="vende.html">Vender</a>
+        <a href="#" class="nav__muted">Financiamiento</a>
+      </nav>
+      <div class="social-links" aria-label="Redes sociales">
+        <a class="social-link" href="https://www.tiktok.com/@jonatancerquera" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M16.6 3c.35 2.2 1.55 3.57 3.4 4.18v3.02a7.14 7.14 0 0 1-3.36-.88v5.94c0 3.32-2.2 5.74-5.56 5.74-3.08 0-5.08-1.9-5.08-4.72 0-2.96 2.22-5.04 5.32-5.04.34 0 .66.03.98.1v3.08a3.13 3.13 0 0 0-.98-.15c-1.38 0-2.28.78-2.28 1.98 0 1.1.8 1.84 1.98 1.84 1.42 0 2.24-.88 2.24-2.46V3h3.34Z" />
+          </svg>
+        </a>
+        <a class="social-link" href="https://www.facebook.com/Motos.con.Jhonny" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M14.1 8.6V6.9c0-.82.4-1.28 1.36-1.28h1.5V3.1A20.13 20.13 0 0 0 14.78 3c-2.18 0-3.68 1.33-3.68 3.78V8.6H8.62v2.82h2.48V21h3v-9.58h2.52l.4-2.82H14.1Z" />
+          </svg>
+        </a>
+        <a class="social-link" href="https://www.instagram.com/motos_con_jhonny/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5Zm0 2.8A2.2 2.2 0 0 0 5.8 8v8A2.2 2.2 0 0 0 8 18.2h8a2.2 2.2 0 0 0 2.2-2.2V8A2.2 2.2 0 0 0 16 5.8H8Zm4 3.1A3.1 3.1 0 1 1 8.9 12 3.1 3.1 0 0 1 12 8.9Zm0 2.1a1 1 0 1 0 1 1 1 1 0 0 0-1-1Zm3.8-2.55a.75.75 0 1 1 .75.75.75.75 0 0 1-.75-.75Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__grid">
+      <div class="hero__text">
+        <h1 class="hero__title">Cada moto<br>tiene su<br><span class="hero__title--accent">historia.</span></h1>
+        <p class="hero__sub" style="margin-top: 24px;">Catálogo en vivo de motos nuevas y usadas.</p>
+        <p class="hero__sub" style="margin-top: 8px;">Filtra por marca, cilindraje y precio — sin vueltas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalogo" id="catalogo">
+    <div class="catalogo__inner">
+
+      <aside class="filters" id="filters">
+        <div class="filters__head">
+          <h2>Encuentra la tuya</h2>
+          <button class="filters__reset" id="resetFilters">Limpiar filtros</button>
+        </div>
+
+        <div class="filter-accordion">
+          <!-- Condición -->
+          <div class="accordion-item" data-group="condicion">
+            <button class="accordion-header">Condición <span class="arrow">⌃</span></button>
+            <div class="accordion-content">
+              <div class="checkbox-list" id="condicionList"></div>
+            </div>
+          </div>
+
+
+          <!-- Tipo -->
+          <div class="accordion-item" data-group="tipo">
+            <button class="accordion-header">Tipo <span class="arrow">⌵</span></button>
+            <div class="accordion-content">
+              <div class="checkbox-list" id="tipoList"></div>
+            </div>
+          </div>
+
+          <!-- Marca -->
+          <div class="accordion-item" data-group="marca">
+            <button class="accordion-header">Marca <span class="arrow">⌃</span></button>
+            <div class="accordion-content">
+              <div class="checkbox-list" id="marcaList"></div>
+            </div>
+          </div>
+
+          <!-- Kilometraje -->
+          <div class="accordion-item" data-group="kilometraje">
+            <button class="accordion-header">Kilometraje <span class="arrow">⌃</span></button>
+            <div class="accordion-content">
+              <div class="checkbox-list" id="kilometrajeList"></div>
+            </div>
+          </div>
+
+          <!-- Año -->
+          <div class="accordion-item" data-group="anio">
+            <button class="accordion-header">Año <span class="arrow">⌵</span></button>
+            <div class="accordion-content">
+              <div class="checkbox-list" id="anioList"></div>
+            </div>
+          </div>
+
+          <!-- Transmisión -->
+          <div class="accordion-item" data-group="transmision">
+            <button class="accordion-header">Transmisión <span class="arrow">⌵</span></button>
+            <div class="accordion-content">
+              <div class="checkbox-list" id="transmisionList"></div>
+            </div>
+          </div>
+
+          <!-- Combustible -->
+          <div class="accordion-item" data-group="combustible">
+            <button class="accordion-header">Combustible <span class="arrow">⌵</span></button>
+            <div class="accordion-content">
+              <div class="checkbox-list" id="combustibleList"></div>
+            </div>
+          </div>
+
+          <!-- Cilindraje -->
+          <div class="accordion-item" data-group="cilindraje">
+            <button class="accordion-header">Cilindraje <span class="arrow">⌃</span></button>
+            <div class="accordion-content">
+              <div class="checkbox-list" id="cilindrajeList"></div>
+            </div>
+          </div>
+
+          <!-- Precio Máximo -->
+          <div class="accordion-item" data-group="precio">
+            <button class="accordion-header">Precio Máximo <span class="arrow">⌃</span></button>
+            <div class="accordion-content">
+              <div class="filter-group">
+                <h3 style="margin-bottom: 8px;">Máximo: <span id="precioValor">$40.000.000</span></h3>
+                <input type="range" id="precioRange" min="3000000" max="40000000" step="1000000" value="40000000"
+                  class="range-slider">
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="results">
+        <div class="results__head">
+          <h2>Todas nuestras motos</h2>
+        </div>
+        <div class="results__toolbar">
+          <input type="text" id="searchInput" class="results__search" placeholder="Buscar por nombre, marca, modelo…"
+            autocomplete="off">
+          <select id="ordenSelect" class="results__sort">
+            <option value="relevancia">Últimas publicadas</option>
+            <option value="precio-asc">Precio más bajo</option>
+            <option value="precio-desc">Precio más alto</option>
+            <option value="anio-desc">Año Mayor a Menor</option>
+            <option value="anio-asc">Año Menor a Mayor</option>
+            <option value="km-desc">Kilómetros Mayor a Menor</option>
+            <option value="km-asc">Kilómetros Menor a Mayor</option>
+          </select>
+        </div>
+        <div class="results__bar">
+          <p id="resultsCount" class="results__count">— resultados</p>
+        </div>
+        <div class="grid" id="grid"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <p class="empty-state__title">Ningún modelo coincide.</p>
+          <p class="empty-state__sub">Ajusta los filtros o limpia la búsqueda para ver más motos.</p>
+        </div>
+      </main>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>RUTA — catálogo construido para esta demo. Inspirado en plataformas de venta de motos.</p>
+  </footer>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/MotoModel.js"></script>
+  <script src="../assets/js/MotoView.js"></script>
+  <script src="../assets/js/MotoController.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const model = new MotoModel(MOTOS);
+      const view = new MotoView();
+      const controller = new MotoController(model, view);
+
+      controller.init();
+    });
+  </script>
+  <a class="floating-whatsapp"
+    href="https://wa.me/573238017635?text=Hola!%20Estoy%20interesado(a)%20en%20los%20servicios%20de%20Motos%20con%20Jhonny.%20Me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20para%20comprar%2C%20vender%20o%20financiar%20una%20moto.%20%C2%BFPodr%C3%ADan%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F%20Gracias."
+    target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path
+        d="M16.04 3.2A12.7 12.7 0 0 0 5.1 22.35L3.5 28.8l6.62-1.55A12.7 12.7 0 1 0 16.04 3.2Zm0 2.55a10.15 10.15 0 0 1 8.62 15.52 10.15 10.15 0 0 1-13.74 3.48l-.47-.27-3.28.77.8-3.19-.3-.5a10.15 10.15 0 0 1 8.37-15.81Zm-4.58 4.62c-.22 0-.58.08-.88.42-.3.33-1.15 1.12-1.15 2.74s1.18 3.18 1.34 3.4c.16.22 2.28 3.65 5.63 4.97 2.79 1.1 3.36.88 3.96.82.6-.06 1.94-.79 2.21-1.55.27-.76.27-1.41.19-1.55-.08-.14-.3-.22-.63-.39-.33-.16-1.94-.96-2.24-1.07-.3-.11-.52-.16-.74.16-.22.33-.85 1.07-1.04 1.29-.19.22-.38.25-.71.08-.33-.16-1.39-.51-2.65-1.63-.98-.87-1.64-1.95-1.83-2.28-.19-.33-.02-.5.14-.66.15-.15.33-.38.49-.57.16-.19.22-.33.33-.55.11-.22.06-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.64Z" />
+    </svg>
+  </a>
+</body>
+
+</html>

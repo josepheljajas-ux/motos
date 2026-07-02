@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motos con Jhonny - Compra, vende y financia tu moto en Bogota</title>
+  <meta name="description"
+    content="Catalogo de motos nuevas y usadas en Bogota. Compra, vende y recibe asesoria por WhatsApp.">
+  <link rel="icon" type="image/jpeg" href="assets/image/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
+        <img src="assets/image/logo.jpg" alt="Motos con Jhonny Logo"
+          style="height: 38px; width: 38px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--accent);">
+        <span>MOTOS CON JHONNY</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__active">Inicio</a>
+        <a href="html/catalogo.html">Catalogo</a>
+        <a href="html/vende.html">Vender</a>
+        <a href="#ubicacion">Ubicacion</a>
+      </nav>
+      <div class="social-links" aria-label="Redes sociales">
+        <a class="social-link" href="https://www.tiktok.com/@jonatancerquera" target="_blank" rel="noopener"
+          aria-label="TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M16.6 3c.35 2.2 1.55 3.57 3.4 4.18v3.02a7.14 7.14 0 0 1-3.36-.88v5.94c0 3.32-2.2 5.74-5.56 5.74-3.08 0-5.08-1.9-5.08-4.72 0-2.96 2.22-5.04 5.32-5.04.34 0 .66.03.98.1v3.08a3.13 3.13 0 0 0-.98-.15c-1.38 0-2.28.78-2.28 1.98 0 1.1.8 1.84 1.98 1.84 1.42 0 2.24-.88 2.24-2.46V3h3.34Z" />
+          </svg>
+        </a>
+        <a class="social-link" href="https://www.facebook.com/Motos.con.Jhonny" target="_blank" rel="noopener"
+          aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M14.1 8.6V6.9c0-.82.4-1.28 1.36-1.28h1.5V3.1A20.13 20.13 0 0 0 14.78 3c-2.18 0-3.68 1.33-3.68 3.78V8.6H8.62v2.82h2.48V21h3v-9.58h2.52l.4-2.82H14.1Z" />
+          </svg>
+        </a>
+        <a class="social-link" href="https://www.instagram.com/motos_con_jhonny/" target="_blank" rel="noopener"
+          aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5Zm0 2.8A2.2 2.2 0 0 0 5.8 8v8A2.2 2.2 0 0 0 8 18.2h8a2.2 2.2 0 0 0 2.2-2.2V8A2.2 2.2 0 0 0 16 5.8H8Zm4 3.1A3.1 3.1 0 1 1 8.9 12 3.1 3.1 0 0 1 12 8.9Zm0 2.1a1 1 0 1 0 1 1 1 1 0 0 0-1-1Zm3.8-2.55a.75.75 0 1 1 .75.75.75.75 0 0 1-.75-.75Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="home-hero">
+    <div class="home-hero__inner">
+      <div class="home-hero__content">
+        <p class="home-hero__eyebrow">COMPRA - VENDE - FINANCIA</p>
+        <h1 class="home-hero__title">Cada moto<br>tiene su<br><span class="home-hero__title--accent">historia.</span>
+        </h1>
+        <p class="home-hero__sub">Catalogo en vivo de motos nuevas y usadas en Bogota. Cada publicacion esta pensada
+          para que compres con confianza.</p>
+        <div class="home-hero__cta">
+          <a href="html/catalogo.html" class="btn btn--primary">Ver catalogo</a>
+          <a href="html/vende.html" class="btn btn--ghost-dark">Vender mi moto</a>
+        </div>
+        <ul class="home-hero__trust">
+          <li>Revision mecanica antes de publicar cada moto</li>
+          <li>Acompanamiento en traspaso y papeleo</li>
+          <li>Asesoria por WhatsApp, sin presion de compra</li>
+        </ul>
+      </div>
+      <div class="home-hero__visual">
+        <svg class="home-dial" id="homeDial" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+          <circle class="home-dial__ring--outer" cx="160" cy="160" r="148" />
+          <circle class="home-dial__ring--inner" cx="160" cy="160" r="118" />
+          <line class="home-dial__tick home-dial__tick--long" x1="20.9" y1="210.6" x2="37.8" y2="204.5" />
+          <line class="home-dial__tick" x1="13.3" y1="140.7" x2="23.2" y2="142.0" />
+          <line class="home-dial__tick home-dial__tick--long" x1="38.8" y1="75.1" x2="53.5" y2="85.4" />
+          <line class="home-dial__tick" x1="91.7" y1="28.7" x2="96.3" y2="37.6" />
+          <line class="home-dial__tick home-dial__tick--long" x1="160" y1="12" x2="160" y2="30" />
+          <line class="home-dial__tick" x1="228.3" y1="28.7" x2="223.7" y2="37.6" />
+          <line class="home-dial__tick home-dial__tick--long" x1="281.2" y1="75.1" x2="266.5" y2="85.4" />
+          <line class="home-dial__tick" x1="306.7" y1="140.7" x2="296.8" y2="142.0" />
+          <line class="home-dial__tick home-dial__tick--long" x1="299.1" y1="210.6" x2="282.2" y2="204.5" />
+          <text class="home-dial__center-word" x="160" y="154">CONFIANZA</text>
+          <text class="home-dial__center-label" x="160" y="174">en cada entrega</text>
+          <line class="home-dial__needle" x1="160" y1="160" x2="49.7" y2="179.4" />
+          <circle class="home-dial__pivot" cx="160" cy="160" r="7" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-usp">
+    <div class="home-usp__inner">
+      <div class="usp-card">
+        <div class="usp-card__icon"><svg viewBox="0 0 24 24">
+            <path d="M3 7l4-4h10l4 4M3 7v10a2 2 0 0 0 2 2h2M3 7h18M21 7v10a2 2 0 0 1-2 2h-2M9 19v-4a3 3 0 0 1 6 0v4" />
+          </svg></div>
+        <p class="usp-card__title">Recibimos tu moto</p>
+        <p class="usp-card__text">La revisamos y te damos una valoracion clara, sin compromiso.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-card__icon"><svg viewBox="0 0 24 24">
+            <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" />
+          </svg></div>
+        <p class="usp-card__title">Financiamos tu compra</p>
+        <p class="usp-card__text">Te ayudamos a encontrar la cuota que se ajuste a tu bolsillo.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-card__icon"><svg viewBox="0 0 24 24">
+            <circle cx="12" cy="10" r="3" />
+            <path d="M12 21s7-7.2 7-11a7 7 0 1 0-14 0c0 3.8 7 11 7 11z" />
+          </svg></div>
+        <p class="usp-card__title">Entrega en Bogota</p>
+        <p class="usp-card__text">Coordinamos la entrega de tu moto donde te quede mejor.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-card__icon"><svg viewBox="0 0 24 24">
+            <path
+              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+          </svg></div>
+        <p class="usp-card__title">Soporte postventa</p>
+        <p class="usp-card__text">Seguimos disponibles despues de que te llevas la moto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-categorias">
+    <div class="home-section">
+      <div class="home-section__head">
+        <p class="home-section__eyebrow">Catalogo</p>
+        <h2 class="home-section__title">Que tipo de moto buscas?</h2>
+        <p class="home-section__sub">Filtra el catalogo completo por el estilo que mas se ajuste a lo que necesitas.</p>
+      </div>
+      <div class="categorias-row">
+        <a href="html/catalogo.html?tipo=urbana" class="categoria-tile"><span
+            class="categoria-tile__label">Urbana</span></a>
+        <a href="html/catalogo.html?tipo=scooter" class="categoria-tile"><span
+            class="categoria-tile__label">Scooter</span></a>
+        <a href="html/catalogo.html?tipo=touring" class="categoria-tile"><span
+            class="categoria-tile__label">Touring</span></a>
+        <a href="html/catalogo.html?tipo=naked" class="categoria-tile"><span
+            class="categoria-tile__label">Naked</span></a>
+        <a href="html/catalogo.html?tipo=deportiva" class="categoria-tile"><span
+            class="categoria-tile__label">Deportiva</span></a>
+        <a href="html/catalogo.html?tipo=enduro" class="categoria-tile"><span
+            class="categoria-tile__label">Enduro</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section" id="destacados">
+    <div class="home-section__head">
+      <p class="home-section__eyebrow">Recien publicadas</p>
+      <h2 class="home-section__title">Revisadas, listas y esperandote</h2>
+      <p class="home-section__sub">Una muestra de lo que vas a encontrar en el catalogo completo.</p>
+    </div>
+    <div class="grid" id="destacadosGrid"></div>
+    <div class="home-destacados__footer">
+      <a href="html/catalogo.html" class="btn btn--ghost">Ver catalogo completo</a>
+    </div>
+  </section>
+
+  <section class="home-vende">
+    <div class="home-vende__inner">
+      <div class="home-vende__head">
+        <p class="home-section__eyebrow">Vende tu moto</p>
+        <h2 class="home-section__title">Facil, rapido y al mejor precio</h2>
+        <p class="home-section__sub">Te acompanamos en cada paso, sin papeleo confuso ni sorpresas.</p>
+      </div>
+      <div class="pasos-grid">
+        <div class="paso-card">
+          <p class="paso-card__num">01</p>
+          <p class="paso-card__title">Cuentanos de tu moto</p>
+          <p class="paso-card__text">Envianos los datos y fotos por WhatsApp o por el formulario.</p>
+        </div>
+        <div class="paso-card">
+          <p class="paso-card__num">02</p>
+          <p class="paso-card__title">Recibe una oferta</p>
+          <p class="paso-card__text">La revisamos y te damos una valoracion clara.</p>
+        </div>
+        <div class="paso-card">
+          <p class="paso-card__num">03</p>
+          <p class="paso-card__title">Resuelve el papeleo</p>
+          <p class="paso-card__text">Te acompanamos en el traspaso, de forma segura.</p>
+        </div>
+        <div class="paso-card">
+          <p class="paso-card__num">04</p>
+          <p class="paso-card__title">Coordina la entrega</p>
+          <p class="paso-card__text">Cerramos el negocio donde te quede mejor en Bogota.</p>
+        </div>
+      </div>
+      <a href="html/vende.html" class="btn btn--primary">Vender mi moto</a>
+    </div>
+  </section>
+
+  <section class="home-section" id="faq">
+    <div class="home-section__head">
+      <p class="home-section__eyebrow">Dudas frecuentes</p>
+      <h2 class="home-section__title">Antes de escribirnos</h2>
+    </div>
+    <div class="home-faq__list" id="faqList">
+      <div class="accordion-item"><button class="accordion-header" type="button">Que documentos necesito para comprar
+          una moto? <span class="arrow">&#8964;</span></button>
+        <div class="accordion-content">
+          <p
+            style="font-family: var(--body); font-size: 0.9rem; color: var(--ink-soft); line-height: 1.6; padding-bottom: 4px;">
+            Solo tu cedula. Nosotros te guiamos en el resto del proceso de traspaso.</p>
+        </div>
+      </div>
+      <div class="accordion-item"><button class="accordion-header" type="button">Como es el proceso si quiero vender mi
+          moto? <span class="arrow">&#8964;</span></button>
+        <div class="accordion-content">
+          <p
+            style="font-family: var(--body); font-size: 0.9rem; color: var(--ink-soft); line-height: 1.6; padding-bottom: 4px;">
+            Nos escribes por WhatsApp con los datos y fotos de tu moto, te damos una valoracion y coordinamos el
+            proceso.</p>
+        </div>
+      </div>
+      <div class="accordion-item"><button class="accordion-header" type="button">Puedo financiar mi moto? <span
+            class="arrow">&#8964;</span></button>
+        <div class="accordion-content">
+          <p
+            style="font-family: var(--body); font-size: 0.9rem; color: var(--ink-soft); line-height: 1.6; padding-bottom: 4px;">
+            Si, te ayudamos a evaluar opciones de financiamiento segun tu perfil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-contacto">
+    <div class="home-contacto__inner">
+      <div class="contacto-card">
+        <div>
+          <p class="contacto-card__title">Tienes dudas? Pregunta sin compromiso</p>
+          <p class="contacto-card__text">Te respondemos por WhatsApp, rapido y sin presion de compra.</p>
+        </div>
+        <a class="contacto-card__cta"
+          href="https://wa.me/573238017635?text=Hola!%20Estoy%20interesado(a)%20en%20los%20servicios%20de%20Motos%20con%20Jhonny."
+          target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path
+              d="M16.04 3.2A12.7 12.7 0 0 0 5.1 22.35L3.5 28.8l6.62-1.55A12.7 12.7 0 1 0 16.04 3.2Zm0 2.55a10.15 10.15 0 0 1 8.62 15.52 10.15 10.15 0 0 1-13.74 3.48l-.47-.27-3.28.77.8-3.19-.3-.5a10.15 10.15 0 0 1 8.37-15.81Z" />
+          </svg>
+          Escribir por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-location" id="ubicacion">
+    <div class="home-location__inner">
+      <div class="home-location__head">
+        <p class="home-section__eyebrow">Ubicacion</p>
+        <h2 class="home-section__title">Visitanos en nuestra tienda</h2>
+        <p class="home-section__sub">Ven a ver las motos disponibles, resolver dudas de traspaso y recibir asesoria
+          directa.</p>
+      </div>
+      <div class="home-location__layout">
+        <div class="home-location__map" aria-label="Mapa de la tienda Motos con Jhonny">
+          <iframe title="Mapa de Motos con Jhonny"
+            src="https://www.google.com/maps?q=Transversal%2035%20%2322-76%20Sur%2C%20Bogot%C3%A1%2C%20Colombia&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="home-location__cards">
+          <article class="location-info"><span class="location-info__icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                <path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" />
+                <circle cx="12" cy="9" r="2.4" />
+              </svg></span>
+            <div>
+              <h3>Direccion</h3>
+              <p>Transversal 35 # 22-76 Sur, Bogota</p><a
+                href="https://www.google.com/maps/search/?api=1&query=Transversal%2035%20%2322-76%20Sur%2C%20Bogot%C3%A1%2C%20Colombia"
+                target="_blank" rel="noopener">Abrir ruta</a>
+            </div>
+          </article>
+          <article class="location-info"><span class="location-info__icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8" />
+                <path d="M12 7v5l3.5 2" />
+              </svg></span>
+            <div>
+              <h3>Horarios</h3>
+              <p>Lun - Sab: 9:00 AM - 6:00 PM</p>
+              <p>Domingos y festivos: con cita previa</p>
+            </div>
+          </article>
+          <article class="location-info"><span class="location-info__icon" aria-hidden="true"><svg viewBox="0 0 24 24">
+                <path d="M4 7h16v10H4z" />
+                <path d="M7 11h4M7 14h7M16 11h1" />
+              </svg></span>
+            <div>
+              <h3>Atencion</h3>
+              <p>Compra, venta, financiamiento y acompanamiento en traspaso.</p><a
+                href="https://wa.me/573238017635?text=Hola!%20Quiero%20visitar%20la%20tienda%20de%20Motos%20con%20Jhonny."
+                target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Motos con Jhonny - Tu catalogo de motos nuevas y usadas en Bogota.</p>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const destacadosGrid = document.getElementById('destacadosGrid');
+      const destacadosPalette = ['#c92a3e', '#e35d6a', '#ffd23f', '#7ee787', '#ff8fb1', '#c792ea'];
+
+      function fmtHome(n) {
+        return "$" + n.toLocaleString("es-CO");
+      }
+
+      function motoHomeSVG(index) {
+        const color = destacadosPalette[index % destacadosPalette.length];
+        return `<svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="90" r="22" stroke="${color}" stroke-width="4"/><circle cx="155" cy="90" r="22" stroke="${color}" stroke-width="4"/><path d="M40 90 L80 55 L120 55 L155 90" stroke="#f3f1ea" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M80 55 L95 30 L120 30" stroke="#f3f1ea" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M120 55 L140 38" stroke="${color}" stroke-width="4" stroke-linecap="round"/><circle cx="40" cy="90" r="4" fill="${color}"/><circle cx="155" cy="90" r="4" fill="${color}"/></svg>`;
+      }
+
+      function escapeHomeHTML(value) {
+        return String(value ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+      }
+
+      function getHomeImagePath(moto) {
+        let path = '';
+        if (moto.imagen) path = moto.imagen;
+        else if (Array.isArray(moto.imagenes) && moto.imagenes.length) path = moto.imagenes[0];
+        else if (moto.img && /\.(avif|webp|jpe?g|jfif|png|gif|svg)$/i.test(moto.img)) path = moto.img;
+        // data.js usa rutas con '../' para paginas en html/; desde la raiz se elimina ese prefijo
+        if (path.startsWith('../')) path = path.slice(3);
+        return path;
+      }
+
+      function homeMediaMarkup(moto, index) {
+        const imagePath = getHomeImagePath(moto);
+        if (!imagePath) return motoHomeSVG(index);
+        const alt = `${moto.marca} ${moto.modelo}`;
+        return `<img class="moto-photo" src="${escapeHomeHTML(imagePath)}" alt="${escapeHomeHTML(alt)}" loading="lazy">`;
+      }
+
+      if (destacadosGrid && typeof MOTOS !== 'undefined') {
+        destacadosGrid.innerHTML = MOTOS.slice(0, 6).map((m, index) => `
+          <a href="html/producto.html?id=${m.id}" class="card-link">
+            <div class="card">
+              <div class="card__media ${getHomeImagePath(m) ? 'card__media--photo' : ''}">
+                <span class="card__badge ${m.condicion === 'Usada' ? 'card__badge--usada' : ''}">${m.condicion}${m.condicion === 'Nueva' ? ' - 0KM' : ''}</span>
+                ${homeMediaMarkup(m, index)}
+              </div>
+              <div class="card__body">
+                <p class="card__marca">${m.marca}</p>
+                <p class="card__modelo">${m.modelo}</p>
+                <div class="card__meta"><span>${m.anio}</span><span>${m.condicion === 'Usada' ? m.km.toLocaleString('es-CO') + ' km' : '0 km'}</span><span>${m.cilindraje > 0 ? m.cilindraje + 'cc' : 'Electrica'}</span></div>
+                <div class="card__footer"><div class="card__price-block"><span class="card__renta">Precio publicado</span><span class="card__precio">${fmtHome(m.precio)}</span></div><span class="card__fav" aria-hidden="true">&hearts;</span></div>
+              </div>
+            </div>
+          </a>`).join('');
+      }
+
+      document.querySelectorAll('#faqList .accordion-item').forEach((item) => {
+        const header = item.querySelector('.accordion-header');
+        header.addEventListener('click', () => item.classList.toggle('open'));
+      });
+
+      const dial = document.getElementById('homeDial');
+      if (dial) setTimeout(() => dial.classList.add('is-active'), 300);
+    });
+  </script>
+  <a class="floating-whatsapp"
+    href="https://wa.me/573238017635?text=Hola!%20Estoy%20interesado(a)%20en%20los%20servicios%20de%20Motos%20con%20Jhonny."
+    target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path
+        d="M16.04 3.2A12.7 12.7 0 0 0 5.1 22.35L3.5 28.8l6.62-1.55A12.7 12.7 0 1 0 16.04 3.2Zm0 2.55a10.15 10.15 0 0 1 8.62 15.52 10.15 10.15 0 0 1-13.74 3.48l-.47-.27-3.28.77.8-3.19-.3-.5a10.15 10.15 0 0 1 8.37-15.81Z" />
+    </svg>
+  </a>
+</body>
+
+</html>
